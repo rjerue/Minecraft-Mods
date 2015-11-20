@@ -1,0 +1,518 @@
+name: UsefulCommands
+main: me.gameguykiler.usefulcommands.UsefulCommands
+author: Gameguykiler
+version: 2.3.5
+
+commands:
+  firstseen:
+    description: Tells how long ago a player first joined
+    permission: olympus.usefulCommands.seen.firstSeen
+    permission-message: You do not have permssion to use this command!
+    usage: /firstseen <player>
+  seen:
+    description: Tells how long ago a player was last online
+    permission: olympus.usefulCommands.seen.seen
+    permission-message: You do not have permssion to use this command!
+    usage: /seen <player>
+  getip:
+    description: Gives the player's IP
+    permission: olympus.usefulCommands.misc.getIP
+    permission-message: You do not have permssion to use this command!
+    usage: /getip <player>
+  lightning:
+    description: Strikes the specified player or all players with lightning
+    permission: olympus.usefulCommands.lightning.lightning
+    permission-message: You do not have permssion to use this command!
+    usage: /lightning [-e] <player> 
+  checkop:
+    description: Checks if the specified player is Op
+    permission: olympus.usefulCommands.op.checkOp
+    permission-message: You do not have permssion to use this command!
+    usage: /checkop <player>
+  antioch:
+    description: Shoots tnt at the location that the player is looking at
+    permission: olympus.usefulCommands.misc.antioch
+    permission-message: You do not have permssion to use this command!
+    usage: /antioch
+  fakeop:
+    description: Fakes a message the the target player has been op'd
+    permission: olympus.usefulCommands.op.fakeOp
+    permission-message: You do not have permssion to use this command!
+    usage: /fakeop <player>
+  mute:
+    description: Prevents the selected player from talking
+    permission: olympus.usefulCommands.mute.mutePlayer
+    permission-message: You do not have permssion to use this command!
+    usage: /mute <player>
+  unmute:
+    description: Lets a player talk again
+    permission: olympus.usefulCommands.mute.unMutePlayer
+    permission-message: You do not have permssion to use this command!
+    usage: /unmute <player>
+  isplayermuted:
+    description: Checks if a player is muted
+    permission: olympus.usefulCommands.mute.checkMute
+    permission-message: You do not have permssion to use this command!
+    usage: /isplayermuted <player>
+  nick:
+    description: This command will change the either the supplied player or the sender's name in game.  It can also be used to reset a the name
+    permission: olympus.usefulCommands.nickNames.nickSelf
+    permission-message: You do not have permssion to use this command!
+    usage: /nick ([player] <nickname> | <player> -reset)
+  realname:
+    description: This command will give the real name of a player
+    permission: olympus.usefulCommands.nickNames.nickreal
+    permission-message: You do not have permssion to use this command!
+    usage: /realname <nickname>
+  ranks:
+    description: If it is not supplied parameters, this command will list all of the ranks.  If it is supplied parameters, it will give information on the supplied rank.
+    permission: olympus.usefulCommands.ranks.ranks
+    permission-message: You do not have permssion to use this command!
+    usage: /ranks [rank]
+  staff:
+    description: It will list the staff ranks and online staff.
+    permission: olympus.usefulCommands.ranks.staffInfo
+    permission-message: You do not have permssion to use this command!
+    usage: /staff
+  promote:
+    description: Promotes grey ranks to white rank
+    #permission: olympus.usefulCommands.promote.promote
+    #permission-message: You do not have permssion to use this command!
+    usage: /promote <player>
+  report:
+    description: Sends a message to all staff
+    permission: olympus.usefulCommands.report.report
+    permission-message: You do not have permssion to use this command!
+    usage: /report <staff | admin | uber> <message>
+  messagespy:
+    description: Toggles the ability to read messages
+    permission: olympus.usefulCommands.messageSpy.messageSpy
+    permission-message: You do not have permssion to use this command!
+    usage: /<messagespy | ms> [check <player>]
+    aliases: ms
+  creative:
+    description: Changes the sender's gamemode to creative mode
+    permission: olympus.usefulCommands.gameMode.creative
+    permission-message: You do not have permssion to use this command!
+    usage: /<creative | c> [player]
+    aliases: c
+  survival:
+    description: Changes the sender's gamemode to survival mode
+    permission: olympus.usefulCommands.gameMode.survival
+    permission-message: You do not have permssion to use this command!
+    usage: /<survival | su> [player]
+    aliases: su
+  setrank:
+    description: Shortened version
+    permission: olympus.usefulCommands.setrank.setrank
+    permission-message: You do not have permssion to use this command!
+    usage: /setrank <player> <group>
+  duty:
+    description: Toggles the staff member from off duty to on duty or vice versa
+    permission: olympus.usefulCommands.ranks.staff
+    permission-message: You do not have permssion to use this command!
+    usage: /duty
+  message:
+    description: Sends private messages
+    permission: olympus.usefulCommands.message.message
+    permission-message: You do not have permssion to use this command!
+    usage: /<message | msg | m> <player> <message>
+    aliases: [msg, m]
+  reply:
+    description: Replies to the previous message
+    permission: olympus.usefulCommands.message.reply
+    permission-message: You do not have permission to use this command!
+    usage: /<reply | r> <message>
+    aliases: r
+  stargateadd:
+    description: Lets the player add people to networks
+    permission: olympus.usefulCommands.stargate.add
+    permission-message: You do not have permission to use this command!
+    usage: /stargateadd <player> [network]
+    aliases: sga
+  stargateremove:
+    description: Lets the player remove people from networks
+    permission: olympus.usefulCommands.stargate.remove
+    permission-message: You do not have permission to use this command!
+    usage: /stargateremove <player> [network]
+    aliases: sgr
+  stargateregister:
+    description: Lets the player register networks
+    permission: olympus.usefulCommands.stargate.register
+    permission-message: You do not have permission to use this command!
+    usage: /stargateregister <network>
+    aliases: sgreg
+  #fly:
+   # description: Lets the players fly
+    #permission: olympus.usefulCommands.flight.allow
+    #permission-message: You do not have permission to use this command!
+    #usage: /fly [player]
+    #aliases: f
+  me:
+    descrption: Allows a player to use /me
+    permission: olympus.usefulCommands.misc.me
+    permission-message: You do not have permission to use this command!
+    usage: /me <action>
+  who:
+    descrption: Allows a player to use /who
+    permission: olympus.usefulCommands.misc.who
+    permission-message: You do not have permission to use this command!
+    usage: /who
+    aliases: [list, online, players]
+  usefulcommands:
+    description: Allows a player to reload the config of the plugin
+    permission: olympus.usefulCommands.misc.reload
+    permission-message: You do not have permission to use this command!
+    usage: /<command> reload
+    aliases: uc
+  apphelp:
+    description: Allows a player to send other players help with applying
+    permission: olympus.usefulCommands.appHelp.message
+    permission-message: You do not have permission to use this command!
+    aliases: ah
+  trusted:
+    description: Promotes a white rank to trusted
+    permission: olympus.usefulCommands.promote.trusted
+    permission-message: You do not have permission to use this command!
+  afk:
+    description: Toggles a player's afk state
+    permission: olympus.usefulCommands.afk.toggle
+    permission-message: You do not have permission to use this command!
+    usage: /<command>
+  broadcast:
+    description: Allows a player to send a broadcast
+    permission: olympus.usefulCommands.misc.broadcast
+    permission-message: You do not have permission to use this command!
+    usage: /<command>
+  helpme:
+    description:  Lets a grey rank see the apphelp message
+    usage: /<command>
+permissions:
+  olympus.usefulCommands.*:
+    description: Gives access to all commands and abilities in UsefulCommands
+    children:
+      olympus.usefulCommands.afk.*: true
+      olympus.usefulCommands.appHelp.*: true
+      olympus.usefulCommands.banHammer.*: true
+      #olympus.usefulCommands.flight.*: true
+      olympus.usefulCommands.gameMode.*: true
+      olympus.usefulCommands.lightning.*: true
+      olympus.usefulCommands.message.*: true
+      olympus.usefulCommands.messageSpy.*: true
+      olympus.usefulCommands.misc.*: true
+      olympus.usefulCommands.mute.*: true
+      olympus.usefulCommands.nickNames.*: true
+      olympus.usefulCommands.op.*: true
+      olympus.usefulCommands.plugins.*: true
+      olympus.usefulCommands.promote.*: true
+      olympus.usefulCommands.ranks.*: true
+      olympus.usefulCommands.report.*: true
+      olympus.usefulCommands.seen.*: true
+      olympus.usefulCommands.setrank.*: true
+      olympus.usefulCommands.stargate.*: true
+    default: false
+  olympus.usefulCommands.afk.*:
+    description: Gives access to all afk commands/abilities
+    children:
+      olympus.usefulCommands.afk.toggle: true
+    default: false
+  olympus.usefulCommands.appHelp.*:
+    description: Gives access to all app help commands/abilities
+    children:
+      olympus.usefulCommands.appHelp.send: true
+      olympus.usefulCommands.appHelp.message: true
+    default: false
+  olympus.usefulCommands.banHammer.*:
+    description: Gives access to all ban hammer abilities
+    children:
+      olympus.usefulCommands.banHammer.allowBan: true
+      olympus.usefulCommands.banHammer.allowKick: true
+    default: false
+  olympus.usefulCommands.gameMode.*:
+    description: Gives access to all game mode changing commands/abilities
+    children:
+      olympus.usefulCommands.gameMode.survival: true
+      olympus.usefulCommands.gameMode.creative: true
+    default: false  
+  #olympus.usefulCommands.flight.*:
+  #  description: Gives access to all flying commands/abilities
+  #  children:
+   #   olympus.usefulCommands.flight.allow: true
+  #  default: false      
+  olympus.usefulCommands.lightning.*:
+    description: Gives access to all lightning commands/abilities
+    children:
+      olympus.uesfulCommands.lightning.lightning: true
+      olympus.usefulCommands.lightning.lightningAll: true
+    default: false
+  olympus.usefulCommands.message.*:
+    description: Gives access to all messaging commands/abilities
+    children:
+      olympus.usefulCommands.message.message: true
+      olympus.usefulCommands.message.reply: true
+    default: false
+  olympus.usefulCommands.messageSpy.*:
+    description: Gives access to all message spy commands/abilities
+    children:
+      olympus.uesfulCommands.messageSpy.messageSpy: true
+    default: false
+  olympus.usefulCommands.misc.*:
+    description: Gives access to all misc commands/abilities
+    children:
+      olympus.usefulCommands.misc.getIP: true
+      olympus.usefulCommands.misc.antioch: true
+      olympus.usefulCommands.misc.me: true
+      olympus.usefulCommands.misc.who: true
+      olympus.usefulCommands.misc.reload: true
+      olympus.usefulCommands.misc.broadcast: true
+    default: false  
+  olympus.usefulCommands.mute.*:
+    description: Gives access to all muting commands/abilities
+    children:
+      olympus.usefulCommands.mute.mutePlayer: true
+      olympus.usefulCommands.mute.unmutePlayer: true
+      olympus.usefulCommands.mute.checkMute: true
+    default: false
+  olympus.usefulCommands.nickNames.*:
+    description: Gives access to all nick name commands/abilities
+    children:
+      olympus.usefulCommands.nickNames.nickSelf: true
+      olympus.usefulCommands.nickNames.nickOther: true
+      olympus.usefulCommands.nickNames.nickReal: true
+      olympus.usefulCommands.nickNames.nickReset: true
+    default: false
+  olympus.usefulCommands.op.*:
+    description: Gives access to all op related commands/abilities
+    children:
+      olympus.usefulCommands.op.checkOp: true
+      olympus.usefulCommands.op.fakeOp: true
+    default: false
+  olympus.usefulCommands.plugins.*:
+    description: Gives access to all plugin commands/abilities
+    children:
+      olympus.usefulCommands.plugins.see: true
+    default: false
+  olympus.usefulCommands.promote.*:
+    description: Gives access to all promote commands/abilities
+    children:
+      olympus.usefulCommands.promote.promote: true
+      olympus.usefulCommands.promote.trusted: true
+    default: false
+  olympus.usefulCommands.ranks.*:
+    description: Gives access to all rank commands/abilities
+    children:
+      olympus.usefulCommands.ranks.ranks: true
+      olympus.usefulCommands.ranks.staffInfo: true
+    default: false
+  olympus.usefulCommands.report.*:
+    description: Gives access to all report commands/abilities
+    children:
+      olympus.usefulCommands.report.report: true
+      olympus.usefulCommands.report.see: true
+      olympus.usefulCommands.report.adminsee: true
+      olympus.usefulCommands.report.ubersee: true 
+    default: false
+  olympus.usefulCommands.seen.*:
+    description: Gives access to all rank commands/abilities
+    children:
+      olympus.usefulCommands.seen.firstSeen: true
+      olympus.usefulCommands.seen.seen: true
+    default: false
+  olympus.usefulCommands.setrank.*:
+    description:  Gives access to all setrank commands/abilities
+    children:
+      olympus.usefulCommands.setrank.setrank: true
+    default: false
+  olympus.usefulCommands.stargateAdd.*:
+    description: Allows the adding of people to networks
+    children:
+      olympus.usefulCommands.stargate.add: true
+    default: op
+  olympus.usefulCommands.stargateRemove.*:
+    description: Allows the removal of people from networks
+    children:
+      olympus.usefulCommands.stargate.remove: true
+    default: op
+  olympus.usefulCommands.stargate.*:
+    description: Gives access to all stargate interactions with this plugin
+    children:
+      olympus.usefulCommands.stargateAdd.*: true
+      olympus.usefulCommands.stargateRemove.*: true
+    default: op
+  olympus.usefulCommands.afk.toggle:
+    description: Allows a player to toggle their afk state
+    default: true
+  olympus.usefulCommands.admin.onDuty: 
+    description: Given to staff members who are online
+    default: false
+  olympus.usefulCommands.appHelp.send:
+    description: Allows a player to use /apphelp
+    default: false
+  olympus.usefulCommands.appHelp.message:
+    description: Allows a player to see the /apphelp message
+    default: true
+  olympus.usefulCommands.banHammer.allowBan:
+    description: Allows the banning of a player when they are hit with "The BanHammer"
+    default: false
+  olympus.usefulCommands.banHammer.allowKick:
+    description: Allows the kicking of a player when they are hit with "The KickHammer"
+    default: false
+  #olympus.usefulCommands.flight.allow:
+  #  description: Allows players to toggle their flight
+  #  default: op
+  olympus.usefulCommands.gameMode.creative:
+    description: Allows the shortened command of switching game modes
+    default: op
+  olympus.usefulCommands.gameMode.creativeOther:
+    description: Allows the shortened command of switching game modes of other players
+    default: op
+  olympus.usefulCommands.gameMode.survival:
+    description: Allows the shortened command of switching game modes
+    default: op
+  olympus.usefulCommands.gameMode.survivalOther:
+    description: Allows the shortened command of switching game modes of other players
+    default: op 
+  olympus.usefulCommands.lightning.lightning:
+    description: Strikes the specified player with lightning
+    default: op
+  olympus.usefulCommands.lightning.lightningAll:
+    description: Strikes all online players with lightning
+    default: false
+  olympus.usefulCommands.message.message:
+    description: Allows players to private message each other
+    default: true
+  olympus.usefulCommands.message.reply:
+    description: Allows players to reply to private messages
+    default: true
+  olympus.usefulCommands.messageSpy.messageSpy:
+    description: Used to toggle and see messages that are send between people
+    default: op
+  olympus.usefulCommands.misc.getIP:
+    description: Gives the player's IP
+    default: op
+  olympus.usefulCommands.misc.antioch:
+    description: Shoots tnt at the location that the player is looking at
+    default: op
+  olympus.usefulCommands.misc.me:
+    description: Allows the use of /me
+    default: true
+  olympus.usefulCommands.misc.who:
+    description: allows the use of /who
+    default: true
+  olympus.usefulCommands.misc.reload:
+    description: allows the use of /usefulcommands reload
+    default: op
+  olympus.usefulCommands.misc.broadcast:
+    description: allows the use of /broadcast
+    default: op
+  olympus.usefulCommands.mute.mutePlayer:
+    description: Allows the ability to mute another player
+    default: op
+  olympus.usefulCommands.mute.unMutePlayer:
+    description: Allows the ability to unmute another player
+    default: op
+  olympus.usefulCommands.mute.checkMute:
+    description: Allows the ability to check if another player is muted
+    default: op
+  olympus.usefulCommands.nickNames.nickSelf:
+    description: Changes the sender's name in game
+    default: false
+  olympus.usefulCommands.nickNames.nickOther:
+    description: Changes the supplied player's name in game
+    default: op
+  olympus.usefulCommands.nickNames.nickReal:
+    description: Gives the real name of a player
+    default: true
+  olympus.usefulCommands.nickNames.nickReset:
+    description: Gives the ability to reset nicknames
+    default: op
+  olympus.usefulCommands.op.checkOp:
+    description: Checks if the specified player is an Op
+    default: true
+  olympus.usefulCommands.op.fakeOp:
+    description: Allows the faking of the op message
+    default: op
+  olympus.usefulCommands.plugins.see:
+    description: Allows the ability to view the plugins and latest builds of things
+    default: false
+  olympus.usefulCommands.promote.promote:
+    description: Promotes grey ranks to white rank
+    default: false
+  olympus.usefulCommands.promote.trusted:
+    description: Promotes white ranks to trusted rank
+    default: false
+  olympus.usefulCommands.ranks.ranks:
+    description: Gives information about the ranks
+    default: true
+  olympus.usefulCommands.ranks.staffInfo:
+    description: Gives information about the staff
+    default: true
+  olympus.usefulCommands.ranks.staff:
+    description: Given to staff
+    default: false
+  olympus.usefulCommands.ranks.grey:
+    description: Given to greys
+    default: false
+  olympus.usefulCommands.ranks.white:
+    description: Given to white
+    default: false
+  olympus.usefulCommands.ranks.trusted:
+    description: Given to trusteds
+    default: false
+  olympus.usefulCommands.ranks.ironvip:
+    description: Given to iron vips
+    default: false
+  olympus.usefulCommands.ranks.goldvip:
+    description: Given to gold vips
+    default: false
+  olympus.usefulCommands.ranks.retired:
+    description: Given to retired staff
+    default: false
+  olympus.usefulCommands.ranks.jrdev:
+    description: Given to developers
+    default: false
+  olympus.usefulCommands.ranks.mod:
+    description: Given to mods
+    default: false
+  olympus.usefulCommands.ranks.admin:
+    description: Given to admins
+    default: false
+  olympus.usefulCommands.ranks.uber:
+    description: Given to ubers
+    default: false
+  olympus.usefulCommands.ranks.owner:
+    description: Given to the owner
+    default: false
+  olympus.usefulCommands.ranks.alert:
+    description: Given to people who will be alerted when a grey rank joins
+    default: false
+  olympus.usefulCommands.report.report:
+    description: Sends a message to all staff
+    default: true
+  olympus.usefulCommands.report.see:
+    description: Allows the viewing of reports
+    default: op
+  olympus.usefulCommands.report.adminSee:
+    description: Allows the viewing of messages to admin+
+    default: op
+  olympus.usefulCommands.report.uberSee:
+    description: Allows the viewing of messages to uber+
+    default: false
+  olympus.usefulCommands.seen.firstSeen:
+    description: Tells how long ago a player first joined
+    default: op
+  olympus.usefulCommands.seen.seen:
+    description: Tells how long ago a player was last online
+    default: op
+  olympus.usefulCommands.setrank.setrank:
+    description: Allows the use of setrank 
+    default: op
+  olympus.usefulCommands.stargate.add:
+    description: Basic add permission
+    default: op
+  olympus.usefulCommands.stargate.remove:
+    description: Basic remove permission
+    default: op
+  olympus.usefulCommands.stargate.register:
+    description: Allows the creation of personal stargate networks
+    default: op

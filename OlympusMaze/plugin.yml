@@ -1,0 +1,36 @@
+name: OlympusMaze
+main: me.ryanjerue.maze.OlympusMaze
+Author: Doombuggie41
+version: 1.0
+ 
+commands:
+  mazehelp:
+    description: maze help menu
+  mazewin:
+    description: lets player win maze
+  mazespawn:
+    description: sends player to maze spawn
+  mazespawnset:
+    description: allows player to set the spawn of the maze
+  mazewinlist:
+    description: lets admins see maze winners
+  mazewinsearch:
+    description: lets admins search winners
+permissions:
+  olympus.maze.*:
+    description: gives all maze perms
+    default: op
+    children:
+      olympus.maze.canwin: true
+      olympus.maze.canspawn: true
+      olympus.maze.cansetspawn: true
+      olympus.maze.canseewinners: true
+      olympus.maze.save: true
+  olympus.maze.player.*:
+    description: for players
+    children:
+      olympus.maze.canwin: true
+      olympus.maze.canspawn: true
+      olympus.maze.cansetspawn: false
+      olympus.maze.canseewinners: false
+      olympus.maze.save: false

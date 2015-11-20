@@ -1,0 +1,32 @@
+Ban Command: /ban
+Ban Node: commandbook.bans.bans
+BanItem: 369
+KickItem: 301
+LastMessaged:
+MessageSpy:
+Mutes:
+NickNames:
+Afk:
+Ranks:
+  Grey:
+    description: Grey rank is the default rank of the server.  All players start out as this rank with very few permissions.
+  White:
+    description: White rank is the member rank of the server.  After signing up, all players receive this rank.  It has many permissions.
+  Trusted:
+    description: Trusted is a rank of prestige.  These people have been on the server for a while, and are to be respected.  More information on Trusted rank can be found at www.olympus-gaming.net/trusted .
+  IronVIP:
+    description: Iron VIP is a donator package.  These people are to be admired for helping keep the server running.  If you would like to become a donator, use /buy while ingame.
+  GoldVIP:
+    description: Gold VIP is a donator package.  These people are to be admired for helping keep the server running.  If you would like to become a donator, use /buy while ingame.
+  JrDev:
+    description: Jr Developer is the developer rank of the server.  These people code plugins for us.  Their skills are coveted and well valued.  If you would like to become a developer, please apply on the forums.
+  Retired:
+    description: Resigned Staff is a rank for those staff members who chose to leave their position of staff.  These people have maintained good relations with the server and its members.
+  Mod:
+    description: Mod is the lowest staff rank.  They can take care of most problems you will encounter.  If you have a problem, these are the first people you should tell.
+  Admin:
+    description: Admin is a staff rank and is one step up from Mod.  These are who you should talk to if a Mod cannot help you.  They can overrule a Mod.
+  Uber:
+    description: Uber Admin is a staff rank and is one step up from Admin.  They mainly deal with things behind the scenes.  If an Mod or Admin cannot help you, an Uber definitely can.  They can overrule Mods and Admins.
+  Owner:
+    description: The owner of the server is this rank.  He is OneUniqueGeek, although he is commonly called just Geek.  He has every command and his word is to be treated as law.  He can overrule anyone.

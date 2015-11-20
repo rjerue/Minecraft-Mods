@@ -1,0 +1,14 @@
+name: OlympusApplicationHelp
+main: me.ryanjerue.OlympusApplicationHelp.OlympusApplicationHelp
+Author: Doombuggie41
+version: 1.53
+ 
+commands:
+  apphelp:
+    description: sends message to player
+permissions:
+  olympus.applicationhelp.help:
+    description: Can send message
+    default: op
+  olympus.applicationhelp.helpme:
+    description: Can have the Welcome Message played to them on demand.

@@ -1,0 +1,16 @@
+name: ShowColors
+main: me.ryanjerue.gmail.OlympusShowColors.OlympusShowColors
+Author: Doombuggie41
+version: 1.1
+ 
+commands:
+  showcolors:
+    description: Shows all of the color codes
+    permissions: olympus.showcolors.show
+    permisisons-message: You don't have permission!
+permissions:
+  olympus.showcolors.*:
+    description: Player can list the colors
+    children:
+      olympus.showcolors.show: true
+    default: true

@@ -1,0 +1,12 @@
+item.examplemod_CustomItem.name=Detonator
+tile.examplemod_CustomBlock.name=Stop Block
+entity.CustomMob.name=Grim Greener
+item.examplemod_CustomSword.name=Emerald Sword
+item.examplemod_CustomHelmet.name=Emerald Helmet
+item.examplemod_CustomChestplate.name=Emerald Chestplate
+item.examplemod_CustomLeggings.name=Emerald Leggings
+item.examplemod_CustomBoots.name=Emerald Boots
+item.examplemod_CustomHoe.name=Emerald Hoe
+item.examplemod_EmeraldAxe.name=Emerald Axe
+item.examplemod_EmeraldPickaxe.name=Emerald Pickaxe
+item.examplemod_EmeraldShovel.name=Emerald Shovel
