@@ -42,3 +42,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.prefs
+OlympusApplicationHelp/bin/
+OlympusMaze/bin/
+OlympusShowColors/bin/
+*.class
+.classpath
+.project
+*.jar
